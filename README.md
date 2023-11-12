@@ -10,6 +10,10 @@ Smart trash can, Trashy
 
 ## Why is it an IoT Project
 * It senses the trash inside and who throws the trash.
-* It computes the amount of contribution from an user.
+* It computes the amount of contribution from a user.
 * It uniquely identifies users.
-* It communicates with the app in our phone.
+* It communicates with the app on our phone.
+
+## What Problem Does it Solve?
+* One common issue in college apartments is people not throwing the trash, or only one person throwing the trash.
+* Trashy imposes an objective rule on who should throw the trash.
