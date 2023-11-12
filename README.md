@@ -1,12 +1,12 @@
 # P5_Senior_Design
 Smart trash can, Trashy
 
-## Trashy Can
+## Trashy Could
 * Records the trash contribution from each registered user.
 * Sense if the trash can is full.
 * Schedule who should throw away the trash.
 * Give warning if trash bag is not inside.
-* Interact all information in an app.
+* Interact all information with the user through an app.
 
 ## Why is it an IoT Project
 * It senses the trash inside and who throws the trash.
