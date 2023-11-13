@@ -1,5 +1,5 @@
 # P5_Senior_Design
-Smart trash can: Trashy
+Smart trash can: **Trashy**.
 
 ## Trashy Could:
 * Record the trash contribution from each registered user.
