@@ -1,9 +1,9 @@
-# Week 3 sTest Log
+# Week 3 Test Log
 
 This test log documents the response from AWS Rekognition on the test1 to test10 in ```../image```
 
 ## Complex Test
-The test images contain multiple objects to mimic real world scenario.
+The test images contain multiple objects to mimic real-world scenarios.
 
 Accuracy: 10%
 
@@ -21,7 +21,7 @@ Accuracy: 10%
 |10|Credit Card| Text, Bandage, First Aid, Bag, Document | No
 
 ## Simple Test
-The test images contain only the item of interest. Note that the test gives correct credit to closely match label such as Digital watch and Wristwatch
+The test images contain only the item of interest. Note that the test gives correct credit to closely match labels such as Digital watch and Wristwatch
 
 Accuracy: 90%
 
@@ -41,4 +41,4 @@ Accuracy: 90%
 ## Issues Found
 * Some labels are too general. (e.g., Accessories)
 * How would the user choose the correct label out of similar ones? (e.g., Wristwatch, Digital watch)
-* Rekognition cannot detect object from complex scene with multiple objects.
+* Rekognition cannot detect object from complex scenes with multiple objects.
