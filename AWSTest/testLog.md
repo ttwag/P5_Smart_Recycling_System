@@ -73,13 +73,17 @@ This test log documents the response from AWS Rekognition on the test1 to test10
 |8|Electronics| Document, Receipt, Text, Bag |
 |9|Credit Card| Text, Accessories, Bag, Handbag, Bandage |
 |10|Credit Card| Text, Bandage, First Aid, Bag, Document |
-|11|Sock|
-|12|Digital Watch |
-|13|Laptop|
-|14|Mobile Phone|
-|15|Laptop|
-|16|Wallet|
-|17|Key|
-|18|Water bottle|
-|19|Mobile Phone|
-|20|Digital Watch|
+
+
+| Test | Manual Label | Rekognition's 5 Label |
+| -----|---------|------|
+|11|Sock|Clothing, Hoisery, Sock, Animal, Reptile | 
+|12|Digital Watch | Wristwatch, Arm, Body Part, Person, Electronics | 
+|13|Laptop| Computer, Electronics, Laptop, PC, Computer Hardware |
+|14|Mobile Phone| Electronics, Mobile Phone, Phone, iPhone, iPod |
+|15|Laptop| Computer Electronics, Laptop, PC, Computer Hardware |
+|16|Wallet| 
+|17|Key|Appliance, Ceiling Fan, Device, Electrical Device, Gun |
+|18|Water bottle| Bottle, Mortar Shell, Weapon, Water bottle, Cup |
+|19|Mobile Phone| 
+|20|Digital Watch| Wristwatch, Arm, Body Part, Person, Accessories |
