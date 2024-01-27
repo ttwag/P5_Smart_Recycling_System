@@ -1,4 +1,4 @@
-# Test Log
+# Week 3 sTest Log
 
 This test log documents the response from AWS Rekognition on the test1 to test10 in ```../image```
 
