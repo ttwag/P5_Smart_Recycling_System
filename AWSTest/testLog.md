@@ -73,3 +73,13 @@ This test log documents the response from AWS Rekognition on the test1 to test10
 |8|Electronics| Document, Receipt, Text, Bag |
 |9|Credit Card| Text, Accessories, Bag, Handbag, Bandage |
 |10|Credit Card| Text, Bandage, First Aid, Bag, Document |
+|11|Sock|
+|12|Digital Watch |
+|13|Laptop|
+|14|Mobile Phone|
+|15|Laptop|
+|16|Wallet|
+|17|Key|
+|18|Water bottle|
+|19|Mobile Phone|
+|20|Digital Watch|
