@@ -1,0 +1,21 @@
+{
+    "appName": "arduino1test",
+    "roleName": "pinpointLambdaRole65b12836",
+    "cloudformationPolicyName": "cloudformationPolicy65b12836",
+    "cloudWatchPolicyName": "cloudWatchPolicy65b12836",
+    "pinpointPolicyName": "pinpointPolicy65b12836",
+    "authPolicyName": "pinpoint_amplify_65b12836",
+    "unauthPolicyName": "pinpoint_amplify_65b12836",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Arduino1Test</string>
+    <string name="msg_token_fmt" />
+</resources>

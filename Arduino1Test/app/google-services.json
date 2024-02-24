@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "472152101495",
+    "project_id": "arduino1test",
+    "storage_bucket": "arduino1test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472152101495:android:80f4fda645b34dc292ac72",
+        "android_client_info": {
+          "package_name": "com.example.arduino1test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9ytCieTIqAayV6P3Lk12RtWwExmoPvqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

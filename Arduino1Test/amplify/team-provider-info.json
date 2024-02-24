@@ -1,0 +1,44 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-arduino1test-dev-145006-authRole",
+      "UnauthRoleArn": "arn:aws:iam::243549416671:role/amplify-arduino1test-dev-145006-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::243549416671:role/amplify-arduino1test-dev-145006-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-arduino1test-dev-145006-deployment",
+      "UnauthRoleName": "amplify-arduino1test-dev-145006-unauthRole",
+      "StackName": "amplify-arduino1test-dev-145006",
+      "StackId": "arn:aws:cloudformation:us-west-1:243549416671:stack/amplify-arduino1test-dev-145006/692beab0-c21d-11ee-af23-029cbb0245ad",
+      "AmplifyAppId": "d3419iuvxfam77"
+    },
+    "categories": {
+      "auth": {
+        "arduino1test862a00a4": {}
+      },
+      "analytics": {
+        "Pinpoint": {
+          "Name": "arduino1test-dev",
+          "Id": "b71e37d213e84e2689d248d68c2ec738",
+          "Region": "us-west-2"
+        },
+        "arduino1test": {}
+      },
+      "notifications": {
+        "Pinpoint": {
+          "Name": "arduino1test-dev",
+          "Id": "b71e37d213e84e2689d248d68c2ec738",
+          "Region": "us-west-2"
+        }
+      },
+      "storage": {
+        "arduino1testb72916e8": {
+          "bucketName": "eec175test1bucket173409-dev",
+          "region": "us-west-1"
+        }
+      },
+      "function": {
+        "moveTheBelt": {}
+      }
+    }
+  }
+}
