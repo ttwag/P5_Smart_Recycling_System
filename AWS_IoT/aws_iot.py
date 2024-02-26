@@ -60,6 +60,8 @@ if __name__ == '__main__':
     '''
     The main function that sets up the MQTT connection to subscribe to a topic 
     and creates the separate thread for the pi_state function
+    Note: before running this main function, remember to configure the AWS credentials in the command line so the 
+    S3 bucket could be used
     '''
     # Create a MQTT connection
     try:
