@@ -61,13 +61,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             Arduino1TestTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
-                }
+//                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+//                    Greeting("Android")
+//                }
             }
             Column {// Upload File
                 Button(onClick = { uploadFile() }) {
-                    Text("Upload File")
+                    Text("Start")
                 }
                 // Download File
                 Button(onClick = { downloadFile() }) {
@@ -91,10 +91,10 @@ class MainActivity : ComponentActivity() {
         Log.i("kilo", "AWS Configuration Done")
     }
     private fun uploadFile() {
-        val exampleFile = File(applicationContext.filesDir, "ExampleKey")
+        val exampleFile = File(applicationContext.filesDir, "ExampleKey.txt")
         exampleFile.writeText("Example file contents")
 
-        Amplify.Storage.uploadFile("ExampleKey", exampleFile,
+        Amplify.Storage.uploadFile("ExampleKey.txt", exampleFile,
             {Log.i("MyAmplifyApp", "Successfully Uploaded")},
             {Log.e("MyAmplifyApp", "Upload Failed", it)}
         )
