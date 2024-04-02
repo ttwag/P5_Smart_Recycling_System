@@ -5,6 +5,7 @@ This project addresses the issue of waste management by designing a robotic tras
 Here's a video demo of the project: 
 
 
+
 This GitHub repository only stores the code for the special object detection part.
 
 The robotic arm part could be found in 
