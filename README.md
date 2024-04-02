@@ -5,7 +5,10 @@ This project addresses the issue of waste management by designing a robotic tras
 Here's a video demo of the project: 
 
 
+<<<<<<< HEAD
 [https://youtu.be/Xi2meyXaQEU?si=OMaDmnrADaCCsMfP](https://youtu.be/Xi2meyXaQEU?si=OMaDmnrADaCCsMfP)
+=======
+>>>>>>> 89af23fff20216f4b4f29ba871f2b2d046583ee3
 
 This GitHub repository only stores the code for the special object detection part.
 
