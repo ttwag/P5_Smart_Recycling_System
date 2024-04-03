@@ -2,13 +2,15 @@
 
 This project addresses the issue of waste management by designing a robotic trash sorting system. The system enhances recycling efforts by sorting plastic bottles from landfill waste and incorporating a detection mechanism for special objects. Our design also communicates with users through a mobile application, providing real-time updates on the sorting process.
 
+![Figure5](./image/Figure5.jpg)
+
+![Figure6](./image/Figure6.jpg)
+
 Here's a video demo of the project: 
 
 [https://youtu.be/Xi2meyXaQEU?si=OMaDmnrADaCCsMfP](https://youtu.be/Xi2meyXaQEU?si=OMaDmnrADaCCsMfP)
 
-This GitHub repository only stores the code for the special object detection part.
-
-The robotic arm part could be found in 
+This GitHub repository only stores the code for the special object detection part. Please visit the Helpful Links section for more details about it.
 
 
 ## High-Level Goal
@@ -51,12 +53,20 @@ The robotic arm part could be found in
 * Mobile App with Android Studio to run the simulator
 
 ## File Structure
-* AWS_IoT
-* Arduino1Test: contains the mobile app
+* **AWS_IoT**: contains the code that runs on the Raspberry Pi.
+* **Arduino1Test**: contains the mobile app. Note that the app needs the Amplify configurations json file for logging into the cloud service. Visit the Helpful Links section for more details.
+* **AWS_Lambda**: contains the Python script that runs on AWS Lambda.
+    * lambda1: takes care of image recognition from Pi's image and push notification.
+    * lambda2: takes care of the user controlling Raspberry Pi through uploading a txt file from the mobile app.
 
 ## Acknowledgment
+This project serves as our Senior Design Project that fulfills the EEC175AB IoT Senior Design Series from the University of California, Davis. View the course description at [https://ece.ucdavis.edu/course-catalog](https://ece.ucdavis.edu/course-catalog).
 
+Special thanks to 
+* Professor **Avesta Sasan** and Teaching Assistant **Banafsheh Saber Latibari** for guidance during Winter 2024 over this project.
+* **Chris Annin** from Annin Robotics for kindly sharing the open-source software and hardware of the AR3 robotic arm.
 
 ## Helpful Links
-
-
+* **Raspberry Pi**: follow the [Connect a Raspberry Pi](https://docs.aws.amazon.com/iot/latest/developerguide/connecting-to-existing-device.html) instruction from AWS to set up the IoT device and get familiar with the AWS IoT Core.
+* **Mobile App**: follow the [AWS Amplify Documentation](https://docs.amplify.aws/android/) to configure the AWS connection in the Android App. This enables the upload to S3 and push notification.
+* **Robotic Arm**: visit [Annin Robotics](https://www.anninrobotics.com) to learn more about the AR3 robotic arm we are using. The DOWNLOADS tab has all of the instructions on how to build the robot and the software source codes.
