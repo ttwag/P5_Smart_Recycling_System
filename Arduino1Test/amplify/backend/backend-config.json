@@ -31,13 +31,6 @@
       "service": "Cognito"
     }
   },
-  "function": {
-    "moveTheBelt": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
   "notifications": {
     "arduino1test": {
       "channels": [

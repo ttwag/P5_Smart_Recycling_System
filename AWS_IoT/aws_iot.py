@@ -14,11 +14,31 @@ from botocore.exceptions import ClientError
 # Global Start event that synchronizes the threads and indicates the Start and Stop of the Pi.
 start_event = threading.Event()
 
+def upload_to_s3(file_path, bucket_name, object_name):
+    """
+    Upload a file to the designated S3 bucket
+    :param file_path: file path to the image or files want to send to S3
+    :param bucket_name: the destination S3 bucket name
+    :param object_name: the name that the stored object is called
+    :return: Null
+    """
+    aws_access_key_id = "AKIATRNFNFTPTUCERTPH"
+    aws_secret_access_key = "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"
+    s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
+
+    try:
+        s3.upload_file(file_path, bucket_name, object_name)
+        print(f"File uploaded to S3: s3://{bucket_name}/{object_name}")
+    except FileNotFoundError:
+        print("The file was not found.")
 
 def read_file(file_path):
     """
-    Read the file content of the keys
+    Read the file content of the file located in file_path
+    :param file_path: the file path to the file content
+    :return: file content
     """
+
     with open(file_path, 'r') as file:
         file_content = file.read()
     return file_content
@@ -26,7 +46,8 @@ def read_file(file_path):
 
 def on_message_received(topic, payload, dup, qos, retain, **kwargs):
     """
-    Callback function that MQTT calls when a message is received
+    Callback function that the MQTT method .subscribe() calls when a message is received
+    The .subscribe() method is called in main
     """
     global start_event, stop_event
     message = json.loads(payload)['message']
@@ -44,15 +65,21 @@ def pi_state():
     Otherwise, it waits indefinitely in the Stop state.
     It sends images continuously while it's in the Start state
     """
-    count = 0
+    picam2 = Picamera2()
+    picam2.start()
     while True:
         start_event.wait()  # Wait at the Stop state
         # Configure the s3 bucket client
-    #    s3 = boto3.client('s3')
-        count = count + 1
         print("I am sending images")
-        # with open("test15.jpeg", "rb") as f:
-        #     s3.upload_fileobj(f, "eec175test1bucket173409-dev", f"test{count}.jpeg")
+        desktop_path = "/home/arduino1/Desktop/txt1/"
+        bucket_name = "eec175test1bucket173409-dev"
+
+        image_file_path = desktop_path + "captured_image.jpg"
+        picam2.resolution = (640, 480)
+        picam2.capture_file(image_file_path)
+        upload_to_s3(image_file_path, bucket_name, "captured_image.jpg")
+
+        print("I am sending images")
         time.sleep(5)
 
 

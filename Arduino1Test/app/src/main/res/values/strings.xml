@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Arduino1Test</string>
     <string name="msg_token_fmt" />
+    <string name="electronics">Electronics</string>
+    <string name="mobile">Mobile</string>
+    <string name="phone">Phone</string>
+    <string name="iphone">iPhone</string>
+    <string name="ipod">iPod</string>
+    <!-- Add these lines for the notification channel -->
+    <string name="channel_name">Push Notifications</string>
+    <string name="channel_description">App push notifications.</string>
+    <string name="enter_text_here">Enter text here</string>
+    <string name="send">Send</string>
 </resources>

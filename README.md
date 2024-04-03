@@ -4,11 +4,7 @@ This project addresses the issue of waste management by designing a robotic tras
 
 Here's a video demo of the project: 
 
-
-<<<<<<< HEAD
 [https://youtu.be/Xi2meyXaQEU?si=OMaDmnrADaCCsMfP](https://youtu.be/Xi2meyXaQEU?si=OMaDmnrADaCCsMfP)
-=======
->>>>>>> 89af23fff20216f4b4f29ba871f2b2d046583ee3
 
 This GitHub repository only stores the code for the special object detection part.
 
@@ -32,27 +28,31 @@ The robotic arm part could be found in
 2. Raspberry Pi uploads the top-view image of the conveyor belt to the S3 Bucket continuously.
 3. The AWS **Lambda** function sends the Raspberry Pi image to the AWS **Rekognition**.
 4. Lambda checks if the user label matches with the object labels detected by Rekognition.
-5. If the labels match, Lambda asks AWS Pinpoint to push a message to the user's mobile app and AWS IoT Core to publish the stop message that stops the Raspberry Pi from taking more image. 
-6. If the labels don't match, nothing happens and the Raspberry Pi will continue to send images to AWS S3.
-7. Note that once the Raspberry Pi stops, user can publish a message to the IoT Topic to ask it to continue.
+5. If the labels match, Lambda asks AWS Pinpoint to push a message to the user's mobile app and AWS IoT Core to publish the stop message that stops the Raspberry Pi from taking more images. 
+6. If the labels don't match, nothing happens and the Raspberry Pi will continue to send images to AWS S3. GPIO Pin 5 turns on and GPIO Pin 6 turns off.
+7. Note that once the Raspberry Pi stops, the user can publish a message to the IoT Topic to ask it to continue. GPIO Pin 6 turns on and GPIO Pin 5 turns off.
 
 ![Figure3](./image/Figure3.png)
 
 **Robotic Arm**
-* The robotic arm's setup and implementation is not included in this GitHub Repository, but how it generally works is illstrated below.
+* The robotic arm's setup and implementation are not included in this GitHub Repository, but how it generally works is illustrated below.
 
 1. The laptop connects to the Teensy microcontroller via USB.
-2. Before we can run any program, the Teensy microcontroller calibrates the robotic arm through the limit switches. The limit switches helps the arm to go back to it's stnadby position.
-3. When user instructs the joint of the robot to move via the app on the laptop, Teensy uses the Stepper Driver to run the motor and move the robot's joint. The encoder helps Teensy to move the motor precisely.
-4. The laptop controls the Arduino nano to use the relay and solenoid valve to open and close the gripper.
+2. Before we can run any program, the Teensy microcontroller calibrates the robotic arm through the limit switches. The limit switches help the arm to go back to its standby position.
+3. When the user instructs the joint of the robot to move via the app on the laptop, Teensy uses the Stepper Driver to run the motor and move the robot's joint. The encoder helps Teensy to move the motor precisely.
+4. The laptop controls the Arduino Nano to use the relay and solenoid valve to open and close the gripper.
 
 ![Figure4](./image/Figure4.png)
 
 
-
 ## List of Material
+* Raspberry Pi 4B
+* AWS Account
+* Mobile App with Android Studio to run the simulator
 
 ## File Structure
+* AWS_IoT
+* Arduino1Test: contains the mobile app
 
 ## Acknowledgment
 

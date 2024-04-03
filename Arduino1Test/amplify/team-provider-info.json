@@ -12,16 +12,12 @@
       "AmplifyAppId": "d3419iuvxfam77"
     },
     "categories": {
-      "auth": {
-        "arduino1test862a00a4": {}
-      },
       "analytics": {
         "Pinpoint": {
           "Name": "arduino1test-dev",
           "Id": "b71e37d213e84e2689d248d68c2ec738",
           "Region": "us-west-2"
-        },
-        "arduino1test": {}
+        }
       },
       "notifications": {
         "Pinpoint": {
@@ -36,8 +32,8 @@
           "region": "us-west-1"
         }
       },
-      "function": {
-        "moveTheBelt": {}
+      "auth": {
+        "arduino1test862a00a4": {}
       }
     }
   }
