@@ -12,6 +12,11 @@ Here's a video demo of the project:
 
 This GitHub repository only stores the code for the special object detection part. Please visit the Helpful Links section for more details about it.
 
+## Collaborator
+* **Elijah Peralta** - evperalta@ucdavis.edu
+* **Pinhao Hong** - cdghong@ucdavis.edu
+* **Tao Wang** - taowang@ucdavis.edu
+* **Taewoo Kim** - twkim@ucdavis.edu
 
 ## High-Level Goal
 
