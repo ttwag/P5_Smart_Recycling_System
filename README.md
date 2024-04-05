@@ -1,6 +1,6 @@
 # Smart Recycling System
 
-This project addresses the issue of waste management by designing a robotic trash sorting system. The system enhances recycling efforts by sorting plastic bottles from landfill waste and incorporating a detection mechanism for special objects. Our design also communicates with users through a mobile application, providing real-time updates on the sorting process.
+This is a senior design team project that addresses the issue of waste management by designing a robotic trash sorting system. The system enhances recycling efforts by sorting plastic bottles from landfill waste and incorporating a detection mechanism for special objects. Our design also communicates with users through a mobile application, providing real-time updates on the sorting process.
 
 ![Figure5](./image/Figure5.jpg)
 
