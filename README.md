@@ -54,6 +54,7 @@ This GitHub repository only stores the code for the special object detection par
 
 ## List of Material
 * Raspberry Pi 4B
+* Pi Camera
 * AWS Account
 * Mobile App with Android Studio to run the simulator
 
@@ -73,5 +74,6 @@ Special thanks to
 
 ## Helpful Links
 * **Raspberry Pi**: follow the [Connect a Raspberry Pi](https://docs.aws.amazon.com/iot/latest/developerguide/connecting-to-existing-device.html) instruction from AWS to set up the IoT device and get familiar with the AWS IoT Core.
+* **Pi Camera**: use the command ```$ libcamera-hello``` in Raspberry Pi's terminal to test if the camera is working.
 * **Mobile App**: follow the [AWS Amplify Documentation](https://docs.amplify.aws/android/) to configure the AWS connection in the Android App. This enables the upload to S3 and push notification.
 * **Robotic Arm**: visit [Annin Robotics](https://www.anninrobotics.com) to learn more about the AR3 robotic arm we are using. The DOWNLOADS tab has all of the instructions on how to build the robot and the software source codes.
